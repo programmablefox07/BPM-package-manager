@@ -3,7 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define REPO_URL "https://github.com/programmablefox07/bpm-repo.git"
+#define REPO_URL "https://github.com/programmablefox07/bpm-package-manger-repo"
 #define PREFIX   "/usr/local"
 #define TMPDIR   "/tmp/bpm-build"
 
