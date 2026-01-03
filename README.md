@@ -63,24 +63,18 @@ sudo bpm install hello
 ```
 This will:
 
-Clone the repository into a temporary directory.
+    Clone the repository into a temporary directory.
+    Check the package exists.
+    Verify the presence of a Makefile.
+    Build the package using make.
+    Install the binary to /usr/local/bin.
+    Clean up temporary files.
+    Package Requirements
 
-Check the package exists.
-
-Verify the presence of a Makefile.
-
-Build the package using make.
-
-Install the binary to /usr/local/bin.
-
-Clean up temporary files.
-
-Package Requirements
 Each package must contain a Makefile.
-
 The Makefile must support:
 
-makefile
+```makefile
 Copy code
 all:
     $(CC) source.c -o mybinary
@@ -89,7 +83,7 @@ install:
     mkdir -p $(PREFIX)/bin
     cp mybinary $(PREFIX)/bin/
 Optional: clean target for cleanup.
-
+```
 Development
 Modify bpm.c for new features (remove, update, list).
 
